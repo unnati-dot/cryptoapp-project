@@ -55,7 +55,7 @@ export default function Navbar(){
 </Menu.Item>
 
 <Menu.Item icon={<MoneyCollectOutlined/>}>
-  <Link to="/exchange">Exchange</Link>
+  <Link to="/exchanges">Exchange</Link>
 </Menu.Item>
 
 <Menu.Item icon={<BulbOutlined/>}>

@@ -24,6 +24,10 @@ endpoints:(builder)=>({
    getCryptoHistory: builder.query({
      query: ({coinId,timeperiod}) => createRequest(`/coin/${coinId}/history/${timeperiod}`),
       
+      }),
+   getExchanges: builder.query({
+     query: () => createRequest(`/exchanges`),
+      
       })
 
 })
@@ -33,7 +37,8 @@ endpoints:(builder)=>({
 export const {
 	useGetCryptosQuery,
    useGetCryptoDetailsQuery,
-   useGetCryptoHistoryQuery
+   useGetCryptoHistoryQuery,
+   useGetExchangesQuery
 
 } = cryptoApi;
 
